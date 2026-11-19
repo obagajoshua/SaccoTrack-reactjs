@@ -6,11 +6,13 @@ import ProfitCalc from "./components/ProfitCalc"
 import Remittance from "./components/Remittance"
 import Maintenance from "./components/Maintainance";
 import Header from "./components/Header";
+import SaccoProvider from "./context/SaccoContext";
 
 
 
 function App() {
   return (
+    <SaccoProvider>
     <BrowserRouter>
     <Header />
     <Routes>
@@ -22,6 +24,7 @@ function App() {
 
     </Routes>
     </BrowserRouter>
+    </SaccoProvider>
     
   );
 }

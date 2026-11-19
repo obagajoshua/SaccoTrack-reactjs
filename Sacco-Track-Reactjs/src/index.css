@@ -59,24 +59,40 @@ body {
 /* slide */
 
 .hero {
-  min-height: 530px;
-  background: linear-gradient(
-    90deg,
-    rgba(42, 123, 155, 1) 0%,
-    rgba(87, 199, 133, 1) 50%,
-    rgba(133, 206, 118, 1) 84%,
-    rgba(237, 221, 83, 1) 100%
-  );
+  min-height: 600px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: background-image 0.5s ease;
+  position: relative;
+}
+
+.hero-overlay {
+  min-height: 600px;
   display: flex;
   align-items: center;
-  padding: 60px 10%;
-  color: white;
+  padding: 60px;
+  background: rgba(0, 0, 0, 0.2);
 }
 
 .hero-content {
-  max-width: 750px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: 420px;
+  max-width: 650px;
+  color: orangered;
 }
-
+.hero-content h1 {
+  font-size: 48px;
+  line-height: 1.2;
+}
+.hero-image img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 15px;
+}
 .hero-label {
   color: #b9dfc5;
   letter-spacing: 3px;
@@ -98,7 +114,9 @@ body {
 }
 
 .hero-button {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   background: white;
   color: #123d2b;
   padding: 14px 25px;
@@ -114,7 +132,7 @@ body {
 .slide-indicators {
   display: flex;
   gap: 12px;
-  margin-top: 45px;
+  margin-top: 35px;
 }
 
 .slide-indicators button {
@@ -282,7 +300,8 @@ footer {
   }
 
   .hero-description {
-    font-size: 16px;
+    min-height: 115px;
+    margin-bottom: 25px;
   }
 
   .feature-grid {
@@ -290,65 +309,6 @@ footer {
   }
 }
 
-/* //calc page css */
-
-/* .calculator-page {
-  max-width: 750px;
-  margin: 50px auto;
-  padding: 30px;
-}
-
-.back-link {
-  display: inline-block;
-  margin-bottom: 25px;
-  color: #123d2b;
-  text-decoration: none;
-  font-weight: bold;
-}
-.back-link:hover {
-  color: #1c6b74;
-}
-
-.calculator-page h1 {
-  margin-bottom: 10px;
-}
-
-.calculator-form {
-  display: grid;
-  gap: 12px;
-  margin-top: 30px;
-}
-
-.calculator-form label {
-  font-weight: 600px;
-}
-
-.calculator-form input {
-  padding: 12px;
-  border: 1px solid black;
-  border-radius: 6px;
-  font-size: 16px;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.calculator-results {
-  margin-top: 30px;
-  padding: 25px;
-  background: #7d8081;
-  border-radius: 10px;
-}
-
-.calculator-results p {
-  display: flex;
-  justify-content: space-between;
-  gap: 15px;
-  margin: 18px 0;
-}
-
-.calculator-results strong {
-  text-align: right;
-} */
 .calculator-page {
   min-height: 100vh;
   padding: 30px;
@@ -870,6 +830,8 @@ footer {
 .vehicle-instructions {
   width: 50%;
   padding: 20px;
+  position: relative;
+  top: -450px;
 }
 
 .vehicle-instructions h2 {
@@ -925,4 +887,73 @@ footer {
 
 .back-link-delete:hover {
   color: white;
+}
+
+/* ////saccoregform/// */
+
+.sacco-profile {
+  background: grey;
+  padding: 25px;
+  margin: 25px 0;
+  border-radius: 12px;
+  max-width: 650px;
+}
+
+.sacco-profile h2 {
+  color: black;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.sacco-profile form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+}
+
+.sacco-profile input {
+  width: 100%;
+  padding: 13px 15px;
+  border: 1px solid black;
+  border-radius: 7px;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+.sacco-profile button {
+  padding: 13px;
+  background: #2fb0be;
+  color: black;
+  border: none;
+  border-radius: 7px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.sacco-profile button:hover {
+  background: #1c6b74;
+}
+
+.vehicle-form select {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid black;
+  border-radius: 7px;
+  font-size: 15px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+@media (max-width: 600px) {
+  .sacco-profile {
+    padding: 18px;
+    margin: 15px 0;
+  }
+
+  .sacco-profile h2 {
+    font-size: 20px;
+  }
 }

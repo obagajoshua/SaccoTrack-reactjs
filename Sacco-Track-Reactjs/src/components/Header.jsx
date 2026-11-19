@@ -9,7 +9,7 @@ export default function Header () {
                 <nav>
                     <a href="/#home">Home</a>
                     <a href="/#about">About</a>
-                    <Link to="/vehicles">Vehicle Registration</Link>
+                    <Link to="/vehicles">Sacco & Vehicle Registration</Link>
         
                 </nav>
                  

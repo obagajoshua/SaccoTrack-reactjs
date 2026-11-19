@@ -1,36 +1,57 @@
 {
-  "vehicles": [
-    {
-      "id": "2",
-      "registration": "KDB 423Z",
-      "model": "Toyota Noah"
-    },
-    {
-      "id": "3",
-      "registration": "KDA 434J",
-      "model": "Nissa Caravan"
-    },
-    {
-      "registration": "KCT 589J",
-      "model": "Subaru",
-      "id": "_Y0i91jOHWA"
-    },
-    {
-      "registration": "KDA 123E",
-      "model": "Toyota",
-      "id": "l_C3lbzVZOc"
-    }
-  ],
+  "vehicles": [],
   "remittances": [
     {
-      "id": "MRdYV9IdJs4",
-      "vehicleId": "2",
-      "expected": 4,
-      "actual": 1,
-      "difference": 3
+      "id": "wZQJ6GLB80o",
+      "vehicleId": null,
+      "expected": 70000,
+      "actual": 30000,
+      "difference": 40000
+    },
+    {
+      "id": "NF0vt9B-RMA",
+      "vehicleId": null,
+      "expected": 70000,
+      "actual": 45000,
+      "difference": 25000
+    },
+    {
+      "id": "P5EADR7uId8",
+      "vehicleId": null,
+      "expected": 70000,
+      "actual": 72000,
+      "difference": -2000
     }
   ],
-  "expenses": [],
-  "maintenance": [],
+  "maintenance": [
+    {
+      "vehicle": "2",
+      "description": "brake failure",
+      "date": "2026-11-20",
+      "cost": 25000,
+      "nextService": "2026-11-30",
+      "id": "XniXDYhfdNI"
+    },
+    {
+      "vehicle": "c-fUOGbnPnY",
+      "description": "brake failure",
+      "date": "2026-11-18",
+      "cost": 35000,
+      "nextService": "2026-11-28",
+      "id": "k3BKMp83Qk0"
+    }
+  ],
+  "sacco": [
+    {
+      "name": "ninety eight",
+      "registrationNumber": "12#4&29",
+      "id": "XQPtU-y59io"
+    },
+    {
+      "name": "super transit",
+      "registrationNumber": "12#234ero",
+      "id": "UuSzpXLMKzw"
+    }
+  ],
   "$schema": "./node_modules/json-server/schema.json"
 }

@@ -5,22 +5,25 @@ import Footer from "./Footer";
 export default function LandingPage() {
     const slides = [
         {
-            title: "Know where your matatu is and where your money went",
+            title: "Know where your matatu is",
             description: "Manage vehicles, drivers and daily remittances in one place.",
             button: "Try the profit calculator",
             link: "/profit-calculator",
+            image: "/profit.jpg"
         },
         {
             title: "Stop losing money to shortfalls ",
             description: "Monitor daily collections and outstanding remittances.",
             button: "Manage remittance",
-            link: "/remittances"
+            link: "/remittances",
+            image: "/remittance.jpg"
         },
         {
             title: "Never miss an expiry date",
             description: "Monitor vehicle servicing and maintenance schedules.",
             button: "Manage maintenance",
-            link: "/maintenance"
+            link: "/maintenance",
+            image: "/maintenance.jpg"
         },
     ];
 
@@ -29,14 +32,15 @@ export default function LandingPage() {
     useEffect(() => {
         const interval = setInterval(() => {
             setCurrentSlide((current) => (current + 1) % slides.length);
-        }, 3500);
+        }, 4000);
 
         return () => clearInterval(interval);
     }, [slides.length]);
 
     return (
         <div className="landing-page">
-            <section className="hero" id="home">
+            <section className="hero" id="home" style={{backgroundImage: `url(${slides[currentSlide].image})`}}>
+            <div className="hero-overlay">
                 <div className="hero-content">
                     <p className="hero-label">
                         SMART SACCO MANAGEMENT
@@ -62,6 +66,7 @@ export default function LandingPage() {
                         ))}
                     </div>
                 </div>
+            </div>
             </section>
         
             <About />
