@@ -1,0 +1,36 @@
+{
+  "vehicles": [
+    {
+      "id": "2",
+      "registration": "KDB 423Z",
+      "model": "Toyota Noah"
+    },
+    {
+      "id": "3",
+      "registration": "KDA 434J",
+      "model": "Nissa Caravan"
+    },
+    {
+      "registration": "KCT 589J",
+      "model": "Subaru",
+      "id": "_Y0i91jOHWA"
+    },
+    {
+      "registration": "KDA 123E",
+      "model": "Toyota",
+      "id": "l_C3lbzVZOc"
+    }
+  ],
+  "remittances": [
+    {
+      "id": "MRdYV9IdJs4",
+      "vehicleId": "2",
+      "expected": 4,
+      "actual": 1,
+      "difference": 3
+    }
+  ],
+  "expenses": [],
+  "maintenance": [],
+  "$schema": "./node_modules/json-server/schema.json"
+}
