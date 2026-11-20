@@ -90,7 +90,7 @@ export default function LandingPage() {
                         <p>Keep track of your expenses</p>
                     </div>
                     <div className="feature-card">
-                        <h3>Maintenance</h3>
+                        <h3>Maintenance Management</h3>
                         <p>Monitor servicing and vehicle repairs</p>
                     </div>
                     <div className="feature-card">

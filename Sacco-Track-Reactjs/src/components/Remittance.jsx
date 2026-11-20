@@ -13,6 +13,7 @@ export default function Remittances() {
         .then((data) => setRecords(data))
         .catch((error) => console.log(error));
     }, []);
+    
     useEffect(() => {
         fetch("http://localhost:3000/vehicles")
         .then((response) => response.json())
