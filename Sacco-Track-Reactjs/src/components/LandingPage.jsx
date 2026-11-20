@@ -19,7 +19,7 @@ export default function LandingPage() {
             image: "/remittance.jpg"
         },
         {
-            title: "Never miss an expiry date",
+            title: "Never miss a maintenance expiry date",
             description: "Monitor vehicle servicing and maintenance schedules.",
             button: "Manage maintenance",
             link: "/maintenance",
