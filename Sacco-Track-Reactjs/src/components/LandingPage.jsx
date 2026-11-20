@@ -5,14 +5,14 @@ import Footer from "./Footer";
 export default function LandingPage() {
     const slides = [
         {
-            title: "Know where your matatu is",
+            title: "Know where your money went",
             description: "Manage vehicles, drivers and daily remittances in one place.",
             button: "Try the profit calculator",
             link: "/profit-calculator",
             image: "/profit.jpg"
         },
         {
-            title: "Stop losing money to shortfalls ",
+            title: "Know where your matatu is ",
             description: "Monitor daily collections and outstanding remittances.",
             button: "Manage remittance",
             link: "/remittances",

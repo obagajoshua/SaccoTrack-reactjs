@@ -122,7 +122,8 @@ export default function Remittances() {
             <h2>Remittance records</h2>
             {records.map((record) => (
                 <div key={record.id} className="remittance-card">
-                    <h3>{record.vehicle}</h3>
+                    <h3>{vehicles.find( v => v.id === record.vehicleId)?.registration 
+                               || "vehicle not found"}</h3>
                     <p>Anticipated: KES{record.expected}</p>
                     <p>Received: KES{record.actual}</p>
                     <p>

@@ -137,7 +137,9 @@ export default function Maintenance() {
                     <div
                       key={record.id}
                       className="maintenance-card">
-                        <h3>{record.vehicle}</h3>
+                        <h3>{vehicles.find( v => String(v.id) === 
+                               String(record.vehicle))?.registration || "vehicle not found"}
+                        </h3>
                         <p>Work: {record.description}</p>
                         <p>Date: {record.date}</p>
                         <p>Cost: KES {record.cost.toLocaleString("en-KE")}</p>
